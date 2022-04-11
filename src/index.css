@@ -1,13 +1,91 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.titulo {
+  text-align: center;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+.tarjetas {
+  box-shadow: 3px 2px 2px 2px grey;
+  border: none;
+  width: 45vw;
+  transition: 0.3s;
+}
+
+.tarjetas:hover {
+  transform: scale(1.1);
+}
+
+.tarjetas > p{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+input{
+  border: none;
+  box-shadow: 2px 2px 2px 2px grey;
+  transition: 0.3s;
+}
+
+input:hover {
+  transform: scale(1.025);
+}
+
+.resultado-paralelogramo {
+  font-size: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+.resultado-peso-paralelogramo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+  border-radius: 1rem;
+  border: 1px;
+  box-shadow: 2px 2px 2px 2px grey;
+  transition: 0.3s;
+  width: 30vw;
+  height: 8vh;
+}
+
+.resultado-volumen-paralelogramo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
+  border-radius: 1rem;
+  border: 1px;
+  box-shadow: 2px 2px 2px 2px grey;
+  transition: 0.3s;
+  width: 30vw;
+  height: 8vh;
+}
+
+.navbar{
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 8vh;
+}
+
+.img-figuras {
+  width: 8vw;
+  height: 8vh;
+  transition: 0.3s;
+}
+
+.img-figuras:hover {
+  transform: scale(1.1);
 }
