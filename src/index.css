@@ -59,7 +59,7 @@ input:hover {
   box-shadow: 2px 2px 2px 2px grey;
   transition: 0.3s;
   width: 30vw;
-  height: 8vh;
+  height: 6vh;
 }
 
 .resultado-volumen-paralelogramo {
@@ -71,7 +71,7 @@ input:hover {
   box-shadow: 2px 2px 2px 2px grey;
   transition: 0.3s;
   width: 30vw;
-  height: 8vh;
+  height: 6vh;
 }
 
 .navbar{
