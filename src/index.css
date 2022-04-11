@@ -12,7 +12,7 @@ body {
 .tarjetas {
   box-shadow: 3px 2px 2px 2px grey;
   border: none;
-  width: 45vw;
+  width: 35vw;
   transition: 0.3s;
 }
 
@@ -31,13 +31,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 0.6rem;
+}
+
+.center-etiquetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.1rem;
 }
 
 input{
   border: none;
   box-shadow: 2px 2px 2px 2px grey;
   transition: 0.3s;
+  margin: 0px 3px;
 }
 
 input:hover {
@@ -48,6 +56,8 @@ input:hover {
   font-size: 1rem;
   font-weight: bold;
   color: green;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .resultado-peso-paralelogramo {
@@ -78,6 +88,21 @@ input:hover {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
   height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desplegable-navbar {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 20vw;
+  height: 5vh;
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-figuras {
@@ -88,4 +113,10 @@ input:hover {
 
 .img-figuras:hover {
   transform: scale(1.1);
+}
+
+.etiqueta-resultados {
+  font-size: 1rem;
+  color: black;
+  margin-right: 0.3rem;
 }
