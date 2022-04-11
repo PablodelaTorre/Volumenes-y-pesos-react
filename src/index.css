@@ -1,5 +1,5 @@
-body {
-  margin: 0;
+.background {
+  background-color: rgb(227, 222, 199);
 }
 
 .titulo {
@@ -9,12 +9,15 @@ body {
 .contenedor {
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 .tarjetas {
   box-shadow: 3px 2px 2px 2px grey;
   border: none;
   width: 35vw;
   transition: 0.3s;
+  background-color: white;
+  margin-bottom: 2.5rem;
 }
 
 .tarjetas:hover {
@@ -47,6 +50,7 @@ input{
   box-shadow: 2px 2px 2px 2px grey;
   transition: 0.3s;
   margin: 0px 3px;
+  height: 5vh;
 }
 
 input:hover {
@@ -109,8 +113,13 @@ input:hover {
   transform: scale(1.1);
 }
 
+.div-navbar {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar{
-  width: 99vw;
+  width: 97.5vw;
   background-color: rgba(0, 0, 0, 0.5);
   height: 8vh;
   display: flex;
@@ -130,13 +139,43 @@ input:hover {
   align-items: center;
 }
 
-.img-figuras {
+.img-prisma-rectangular-recto {
   width: 8vw;
   height: 8vh;
   transition: 0.3s;
 }
 
-.img-figuras:hover {
+.img-prisma-rectangular-recto:hover {
+  transform: scale(1.1);
+}
+
+.img-cubo {
+  width: 8vw;
+  height: 13vh;
+  transition: 0.3s;
+}
+
+.img-cubo:hover {
+  transform: scale(1.1);
+}
+
+.img-esfera {
+  width: 8vw;
+  height: 18vh;
+  transition: 0.3s;
+}
+
+.img-esfera:hover {
+  transform: scale(1.1);
+}
+
+.img-prisma-circular {
+  width: 8vw;
+  height: 18vh;
+  transition: 0.3s;
+}
+
+.img-prisma-circular:hover {
   transform: scale(1.1);
 }
 
