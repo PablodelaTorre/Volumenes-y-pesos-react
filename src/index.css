@@ -122,21 +122,15 @@ input:hover {
   width: 97.5vw;
   background-color: rgba(0, 0, 0, 0.5);
   height: 8vh;
-  display: flex;
+  display: grid;
+  place-items: center;
   justify-content: center;
-  align-items: center;
 }
 
-.desplegable-navbar {
-  font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 20vw;
-  height: 5vh;
-  border-radius: 1rem;
+.navbar p {
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .img-prisma-rectangular-recto {
@@ -183,4 +177,13 @@ input:hover {
   font-size: 1rem;
   color: black;
   margin-right: 0.3rem;
+}
+
+.links-figuras {
+  text-decoration: none;
+  color: black;
+}
+
+.contenedor-links {
+  background-color: black;
 }

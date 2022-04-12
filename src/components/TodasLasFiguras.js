@@ -5,6 +5,7 @@ import Esfera from './Esfera'
 import PrismaCircular from './PrismaCircular'
 
 const TodasLasFiguras = () => {
+
     return (
         <>
             <Cubo/>
@@ -12,7 +13,7 @@ const TodasLasFiguras = () => {
             <Esfera/>
             <PrismaCircular/>
         </>
-    )
+    )    
 }
 
 export default TodasLasFiguras
