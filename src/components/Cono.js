@@ -1,16 +1,24 @@
 import React, {useState} from 'react'
-import cubo from '../multimedia/cubo.png'
+import cono from '../multimedia/cono.png'
 
-const PrismaRectangularRecto = () => {
+const Cono = () => {
 
-    const [lado, setLado] = useState()
+    const PI = 3.14
+
+    const [radio, setRadio] = useState()
+    const [altura, setAltura] = useState()
     const [densidad, setDensidad] = useState()
     const [volumen, setVolumen] = useState()
     const [peso, setPeso] = useState()
 
-    const handleChangeLado = (e) => {
+    const handleChangeRadio = (e) => {
         const value = e.target.value
-        setLado(Number(value))
+        setRadio(Number(value))
+    }
+
+    const handleChangeAltura = (e) => {
+        const value = e.target.value
+        setAltura(Number(value))
     }
 
     const handleChangeDensidad = (e) => {
@@ -18,30 +26,31 @@ const PrismaRectangularRecto = () => {
         setDensidad(Number(value))
     }
 
-    const volCubo = () => {
-        setVolumen(lado * lado * lado)
+    const volEsfera = () => {
+        setVolumen((PI * (Math.pow(radio, 2)) * altura) / 3)
     }
 
-    const pesoCubo = () => {
+    const pesoEsfera = () => {
         setPeso(volumen * densidad)
     }
 
     return (
         <div className='contenedor'>
             <div className='tarjetas'>
-                <p>Cubo</p>
+                <p>Cono</p>
                 <div className='center'>
-                    <img className='img-cubo' src={cubo} alt="Cubo" />
+                    <img className='img-esfera' src={cono} alt="Cono" />
                 </div>
                 <div className='center'>
-                    <input onChange={handleChangeLado} value={lado} type="text" name='lado' placeholder='Lado en cm'/>
+                    <input onChange={handleChangeRadio} value={radio} type="text" name='radio' placeholder='Radio en cm'/>
+                    <input onChange={handleChangeAltura} value={altura} type="text" name='altura' placeholder='Altura en cm'/>
                 </div>
                 <div className='center'>
                     <input onChange={handleChangeDensidad} type="text" value={densidad} name='densidad' placeholder='Densidad en gramos/cm3'/>
                 </div>
                 <p className='resultado-paralelogramo'>Resultados:</p>
                 <div className='center'>
-                    <button className='calcular-prisma-rectangular-recto' onClick={volCubo}>Calcular volumen:</button>  
+                    <button className='calcular-prisma-rectangular-recto' onClick={volEsfera}>Calcular volumen:</button>  
                 </div>
                 <div className='center'>
                     <p className='etiqueta-resultados'>Volumen en cm3:</p>  
@@ -50,7 +59,7 @@ const PrismaRectangularRecto = () => {
                     <div className='resultado-volumen-paralelogramo'>{volumen? volumen : ""}</div>
                 </div>
                 <div className='center'>
-                    <button className='calcular-prisma-rectangular-recto' onClick={pesoCubo}>Calcular peso:</button>  
+                    <button className='calcular-prisma-rectangular-recto' onClick={pesoEsfera}>Calcular peso:</button>  
                 </div>
                 <div className='center-etiquetas'>  
                     <p className='etiqueta-resultados'>Peso en gramos:</p>
@@ -63,4 +72,4 @@ const PrismaRectangularRecto = () => {
     )
 }
 
-export default PrismaRectangularRecto
+export default Cono

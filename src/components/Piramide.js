@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
-import cubo from '../multimedia/cubo.png'
+import piramide from '../multimedia/piramide.png'
 
-const PrismaRectangularRecto = () => {
+const Piramide = () => {
 
     const [lado, setLado] = useState()
+    const [altura, setAltura] = useState()
     const [densidad, setDensidad] = useState()
     const [volumen, setVolumen] = useState()
     const [peso, setPeso] = useState()
@@ -13,35 +14,41 @@ const PrismaRectangularRecto = () => {
         setLado(Number(value))
     }
 
+    const handleChangeAltura = (e) => {
+        const value = e.target.value
+        setAltura(Number(value))
+    }
+
     const handleChangeDensidad = (e) => {
         const value = e.target.value
         setDensidad(Number(value))
     }
 
-    const volCubo = () => {
-        setVolumen(lado * lado * lado)
+    const volPrismaCircular = () => {
+        setVolumen(1/3((lado * lado) * altura))
     }
 
-    const pesoCubo = () => {
+    const pesoPrismaCircular = () => {
         setPeso(volumen * densidad)
     }
 
     return (
         <div className='contenedor'>
             <div className='tarjetas'>
-                <p>Cubo</p>
+                <p>Piramide (Cilindro)</p>
                 <div className='center'>
-                    <img className='img-cubo' src={cubo} alt="Cubo" />
+                    <img className='img-prisma-circular' src={piramide} alt="Piramide" />
                 </div>
                 <div className='center'>
                     <input onChange={handleChangeLado} value={lado} type="text" name='lado' placeholder='Lado en cm'/>
+                    <input onChange={handleChangeAltura} type="text" value={altura} name='altura' placeholder='Altura en cm'/>
                 </div>
                 <div className='center'>
                     <input onChange={handleChangeDensidad} type="text" value={densidad} name='densidad' placeholder='Densidad en gramos/cm3'/>
                 </div>
                 <p className='resultado-paralelogramo'>Resultados:</p>
                 <div className='center'>
-                    <button className='calcular-prisma-rectangular-recto' onClick={volCubo}>Calcular volumen:</button>  
+                    <button className='calcular-prisma-rectangular-recto' onClick={volPrismaCircular}>Calcular volumen:</button>  
                 </div>
                 <div className='center'>
                     <p className='etiqueta-resultados'>Volumen en cm3:</p>  
@@ -50,7 +57,7 @@ const PrismaRectangularRecto = () => {
                     <div className='resultado-volumen-paralelogramo'>{volumen? volumen : ""}</div>
                 </div>
                 <div className='center'>
-                    <button className='calcular-prisma-rectangular-recto' onClick={pesoCubo}>Calcular peso:</button>  
+                    <button className='calcular-prisma-rectangular-recto' onClick={pesoPrismaCircular}>Calcular peso:</button>  
                 </div>
                 <div className='center-etiquetas'>  
                     <p className='etiqueta-resultados'>Peso en gramos:</p>
@@ -63,4 +70,4 @@ const PrismaRectangularRecto = () => {
     )
 }
 
-export default PrismaRectangularRecto
+export default Piramide

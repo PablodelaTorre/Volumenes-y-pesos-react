@@ -39,7 +39,7 @@ const PrismaCircular = () => {
             <div className='tarjetas'>
                 <p>Prisma circular (Cilindro)</p>
                 <div className='center'>
-                    <img className='img-prisma-circular' src={prismaCircular} alt="Prisma Rectangular Recto" />
+                    <img className='img-prisma-circular' src={prismaCircular} alt="Prisma Circular" />
                 </div>
                 <div className='center'>
                     <input onChange={handleChangeRadio} value={radio} type="text" name='radio' placeholder='Radio en cm'/>

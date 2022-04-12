@@ -5,6 +5,7 @@
 .titulo {
   text-align: center;
   margin-bottom: 2.5rem;
+  color: white;
 }
 .contenedor {
   display: flex;
@@ -33,7 +34,7 @@
 
 .center {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 0.6rem;
 }
@@ -49,7 +50,8 @@ input{
   border: none;
   box-shadow: 2px 2px 2px 2px grey;
   transition: 0.3s;
-  margin: 0px 3px;
+  margin-left: 1rem;
+  margin-right: 1rem;
   height: 5vh;
 }
 
@@ -173,6 +175,16 @@ input:hover {
   transform: scale(1.1);
 }
 
+.img-prisma-triangular {
+  width: 8vw;
+  height: 18vh;
+  transition: 0.3s;
+}
+
+.img-prisma-triangular:hover {
+  transform: scale(1.1);
+}
+
 .etiqueta-resultados {
   font-size: 1rem;
   color: black;
@@ -182,8 +194,4 @@ input:hover {
 .links-figuras {
   text-decoration: none;
   color: black;
-}
-
-.contenedor-links {
-  background-color: black;
 }

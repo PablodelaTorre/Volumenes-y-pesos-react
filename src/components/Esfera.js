@@ -31,9 +31,9 @@ const Esfera = () => {
     return (
         <div className='contenedor'>
             <div className='tarjetas'>
-                <p>Cubo</p>
+                <p>Esfera</p>
                 <div className='center'>
-                    <img className='img-esfera' src={esfera} alt="Prisma Rectangular Recto" />
+                    <img className='img-esfera' src={esfera} alt="Esfera" />
                 </div>
                 <div className='center'>
                     <input onChange={handleChangeRadio} value={radio} type="text" name='radio' placeholder='radio en cm'/>

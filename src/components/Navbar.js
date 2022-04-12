@@ -19,8 +19,15 @@ const Navbar = () => {
                 Filtrar Figuras
             </DropdownToggle>
             <DropdownMenu>
-                <DropdownItem className='contenedor-links'><Link className='links-figuras' to="/">Todas las figuras</Link></DropdownItem>
-                <DropdownItem className='contenedor-links'><Link className='links-figuras' to="/cubo">Cubo</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/">Todas las figuras</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/cubo">Cubo</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/prismaRectangularRecto">Prisma Rectangular Recto</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/esfera">Esfera</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/prismaCircular">Prisma Circular</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/prismaCircular">Prisma Circular</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/prismaTriangular">Prisma Triangular</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/piramide">Piramide</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/cono">Cono</Link></DropdownItem>
             </DropdownMenu>
         </Dropdown>
         </div>
