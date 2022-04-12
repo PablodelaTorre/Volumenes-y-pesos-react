@@ -6,6 +6,7 @@ import PrismaCircular from './PrismaCircular'
 import PrismaTriangular from './PrismaTriangular'
 import Cono from './Cono'
 import Piramide from './Piramide'
+import ConoTruncado from './ConoTruncado'
 
 const TodasLasFiguras = () => {
 
@@ -18,6 +19,7 @@ const TodasLasFiguras = () => {
             <PrismaTriangular/>
             <Piramide/>
             <Cono/>
+            <ConoTruncado/>
         </>
     )    
 }

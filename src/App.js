@@ -9,6 +9,7 @@ import PrismaRectangularRecto from './components/PrismaRectangularRecto';
 import PrismaTriangular from './components/PrismaTriangular';
 import Cono from './components/Cono';
 import Piramide from './components/Piramide';
+import ConoTruncado from './components/ConoTruncado';
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
           <Route path='/prismaTriangular' element={<PrismaTriangular/>}/>
           <Route path='/piramide' element={<Piramide/>}/>
           <Route path='/cono' element={<Cono/>}/>
+          <Route path='/conoTruncado' element={<ConoTruncado/>}/>
         </Routes>        
       </BrowserRouter>
     </div>

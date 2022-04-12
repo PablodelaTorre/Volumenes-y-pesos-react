@@ -28,6 +28,7 @@ const Navbar = () => {
                 <DropdownItem><Link className='links-figuras' to="/prismaTriangular">Prisma Triangular</Link></DropdownItem>
                 <DropdownItem><Link className='links-figuras' to="/piramide">Piramide</Link></DropdownItem>
                 <DropdownItem><Link className='links-figuras' to="/cono">Cono</Link></DropdownItem>
+                <DropdownItem><Link className='links-figuras' to="/conoTruncado">Cono Truncado</Link></DropdownItem>
             </DropdownMenu>
         </Dropdown>
         </div>
