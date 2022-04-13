@@ -10,6 +10,9 @@ import PrismaTriangular from './components/PrismaTriangular';
 import Cono from './components/Cono';
 import Piramide from './components/Piramide';
 import ConoTruncado from './components/ConoTruncado';
+import Footer from './components/Footer';
+import Areas from './components/Areas';
+import Volumenes from './components/Volumenes';
 
 const App = () => {
 
@@ -19,9 +22,10 @@ const App = () => {
         <div className='div-navbar'>
           <Navbar/>
         </div>
-        <h1 className='titulo'>Calculadora de volumenes y pesos.</h1>
         <Routes>
-          <Route path='/' element={<TodasLasFiguras/>}/>
+        <Route path='/' element={<TodasLasFiguras/>}/>
+          <Route path='/areas' element={<Areas/>}/>
+          <Route path='/volumenes' element={<Volumenes/>}/>
           <Route path='/cubo' element={<Cubo/>}/>
           <Route path='/prismaRectangularRecto' element={<PrismaRectangularRecto/>}/>
           <Route path='/esfera' element={<Esfera/>}/>
@@ -31,6 +35,9 @@ const App = () => {
           <Route path='/cono' element={<Cono/>}/>
           <Route path='/conoTruncado' element={<ConoTruncado/>}/>
         </Routes>        
+        <div className='div-footer'>
+          <Footer/>
+        </div>
       </BrowserRouter>
     </div>
   )

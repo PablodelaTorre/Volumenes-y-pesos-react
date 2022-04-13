@@ -37,7 +37,7 @@ const Piramide = () => {
             <div className='tarjetas'>
                 <p>Piramide (Cilindro)</p>
                 <div className='center'>
-                    <img className='img-prisma-circular' src={piramide} alt="Piramide" />
+                    <img className='img-piramide' src={piramide} alt="Piramide" />
                 </div>
                 <div className='center'>
                     <input onChange={handleChangeLado} value={lado} type="text" name='lado' placeholder='Lado en cm'/>

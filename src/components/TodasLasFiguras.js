@@ -7,19 +7,15 @@ import PrismaTriangular from './PrismaTriangular'
 import Cono from './Cono'
 import Piramide from './Piramide'
 import ConoTruncado from './ConoTruncado'
+import Volumenes from './Volumenes'
+import Areas from './Areas'
 
 const TodasLasFiguras = () => {
 
     return (
         <>
-            <Cubo/>
-            <PrismaRectangularRecto/>
-            <Esfera/>
-            <PrismaCircular/>
-            <PrismaTriangular/>
-            <Piramide/>
-            <Cono/>
-            <ConoTruncado/>
+            <Volumenes/>
+            <Areas/>
         </>
     )    
 }

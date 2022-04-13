@@ -43,7 +43,7 @@ const ConoTruncado = () => {
     return (
         <div className='contenedor'>
             <div className='tarjetas'>
-                <p>Prisma rectangular recto</p>
+                <p>Cono Truncado</p>
                 <div className='center'>
                     <img className='img-cono-truncado' src={conoTruncado} alt="Cono Truncado" />
                 </div>
