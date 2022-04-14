@@ -26,7 +26,8 @@ const Volumenes = () => {
                         Filtrar Figuras
                     </DropdownToggle>
                     <DropdownMenu>
-                        <DropdownItem><Link className='links-figuras' to="/">Todas las figuras</Link></DropdownItem>
+                        <DropdownItem><Link className='links-figuras' to="/">Todos las figuras</Link></DropdownItem>
+                        <DropdownItem><Link className='links-figuras' to="/volumenes">Todos las Volumenes</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/cubo">Cubo</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/prismaRectangularRecto">Prisma Rectangular Recto</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/esfera">Esfera</Link></DropdownItem>

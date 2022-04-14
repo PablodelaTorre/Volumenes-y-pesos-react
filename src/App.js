@@ -13,6 +13,9 @@ import ConoTruncado from './components/ConoTruncado';
 import Footer from './components/Footer';
 import Areas from './components/Areas';
 import Volumenes from './components/Volumenes';
+import Paralelogramo from './components/Paralelogramo';
+import Rectangulo from './components/Rectangulo';
+import Cuadrado from './components/Cuadrado';
 
 const App = () => {
 
@@ -34,6 +37,9 @@ const App = () => {
           <Route path='/piramide' element={<Piramide/>}/>
           <Route path='/cono' element={<Cono/>}/>
           <Route path='/conoTruncado' element={<ConoTruncado/>}/>
+          <Route path='/cuadrado' element={<Cuadrado/>}/>
+          <Route path='/rectangulo' element={<Rectangulo/>}/>
+          <Route path='/paralelogramo' element={<Paralelogramo/>}/>
         </Routes>        
         <div className='div-footer'>
           <Footer/>

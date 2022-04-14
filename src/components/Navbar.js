@@ -8,7 +8,7 @@ const Navbar = () => {
             <p>Volumenes Densidades y Pesos</p>
             <ul className='lista-categorias'>
                 <li><Link to={"/areas"}>Areas</Link></li>
-                <li><Link to={"/volumenes"}>Volumenes</Link></li>
+                <li><Link to={"/volumenes"}>Volumenes y pesos</Link></li>
             </ul>
         </div>
     )
