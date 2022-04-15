@@ -14,7 +14,7 @@ const Navbar = () => {
             <ul className='lista-categorias'>
                 <li><Link to={"/quienesSomos"}>Quienes somos</Link></li>
                 <li><Link to={"/contacto"}>Contacto</Link></li>
-                <li><Link to={"/ayudanos"}>Nos podes ayudar?</Link></li>
+                <li><Link to={"/ayudanos"}>¿Nos podes ayudar?</Link></li>
             </ul>
         </div>
     )
