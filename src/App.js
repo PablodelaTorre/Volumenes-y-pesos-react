@@ -13,9 +13,12 @@ import ConoTruncado from './components/ConoTruncado';
 import Footer from './components/Footer';
 import Areas from './components/Areas';
 import Volumenes from './components/Volumenes';
+import Superficies from './components/Superficies';
 import Paralelogramo from './components/Paralelogramo';
 import Rectangulo from './components/Rectangulo';
 import Cuadrado from './components/Cuadrado';
+import SuperficieEsfera from './components/SuperficieEsfera';
+
 
 const App = () => {
 
@@ -27,7 +30,6 @@ const App = () => {
         </div>
         <Routes>
         <Route path='/' element={<TodasLasFiguras/>}/>
-          <Route path='/areas' element={<Areas/>}/>
           <Route path='/volumenes' element={<Volumenes/>}/>
           <Route path='/cubo' element={<Cubo/>}/>
           <Route path='/prismaRectangularRecto' element={<PrismaRectangularRecto/>}/>
@@ -37,9 +39,12 @@ const App = () => {
           <Route path='/piramide' element={<Piramide/>}/>
           <Route path='/cono' element={<Cono/>}/>
           <Route path='/conoTruncado' element={<ConoTruncado/>}/>
+          <Route path='/areas' element={<Areas/>}/>
           <Route path='/cuadrado' element={<Cuadrado/>}/>
           <Route path='/rectangulo' element={<Rectangulo/>}/>
           <Route path='/paralelogramo' element={<Paralelogramo/>}/>
+          <Route path='/superficies' element={<Superficies/>}/>
+          <Route path='/supEsfera' element={<SuperficieEsfera/>}/>
         </Routes>        
         <div className='div-footer'>
           <Footer/>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Volumenes from './Volumenes'
 import Areas from './Areas'
+import Superficies from './Superficies'
 
 const TodasLasFiguras = () => {
 
@@ -8,6 +9,7 @@ const TodasLasFiguras = () => {
         <>
             <Volumenes/>
             <Areas/>
+            <Superficies/>
         </>
     )    
 }
