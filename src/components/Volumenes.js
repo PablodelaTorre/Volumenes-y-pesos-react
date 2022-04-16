@@ -9,6 +9,7 @@ import PrismaTriangular from './PrismaTriangular'
 import Cono from './Cono'
 import Piramide from './Piramide'
 import ConoTruncado from './ConoTruncado'
+import PrismaNLados from './PrismaNLados'
 
 const Volumenes = () => {   
 
@@ -37,6 +38,7 @@ const Volumenes = () => {
                         <DropdownItem><Link className='links-figuras' to="/piramide">Piramide</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/cono">Cono</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/conoTruncado">Cono Truncado</Link></DropdownItem>
+                        <DropdownItem><Link className='links-figuras' to="/prismaNLados">Prisma de N lados</Link></DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
             </div>
@@ -48,6 +50,7 @@ const Volumenes = () => {
             <Piramide/>
             <Cono/>
             <ConoTruncado/>
+            <PrismaNLados/>
         </>
     )  
 }

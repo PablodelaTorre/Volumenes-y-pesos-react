@@ -4,6 +4,7 @@ import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap
 import Cuadrado from './Cuadrado'
 import Rectangulo from './Rectangulo'
 import Paralelogramo from './Paralelogramo'
+import PoligonoRegular from './PoligonoRegular'
 
 const Areas = () => {
 
@@ -26,12 +27,14 @@ const Areas = () => {
                         <DropdownItem><Link className='links-figuras' to="/cuadrado">Cuadrado</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/rectangulo">Rectángulo</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/paralelogramo">Paralelogramo</Link></DropdownItem>
+                        <DropdownItem><Link className='links-figuras' to="/poligonoRegular">Polígono Regular</Link></DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
             </div>
             <Cuadrado/>
             <Rectangulo/>
             <Paralelogramo/>
+            <PoligonoRegular/>
         </>
     )
 }

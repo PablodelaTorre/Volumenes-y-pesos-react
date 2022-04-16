@@ -307,6 +307,16 @@ input:hover {
   transform: scale(1.1);
 }
 
+.img-poligonoRegular {
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+}
+
+.img-poligonoRegular:hover {
+  transform: scale(1.1);
+}
+
 .etiqueta-resultados {
   font-size: 1rem;
   color: black;

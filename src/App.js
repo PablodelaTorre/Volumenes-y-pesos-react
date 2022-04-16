@@ -18,6 +18,8 @@ import Paralelogramo from './components/Paralelogramo';
 import Rectangulo from './components/Rectangulo';
 import Cuadrado from './components/Cuadrado';
 import SuperficieEsfera from './components/SuperficieEsfera';
+import PoligonoRegular from './components/PoligonoRegular';
+import PrismaNLados from './components/PrismaNLados';
 
 
 const App = () => {
@@ -39,10 +41,12 @@ const App = () => {
           <Route path='/piramide' element={<Piramide/>}/>
           <Route path='/cono' element={<Cono/>}/>
           <Route path='/conoTruncado' element={<ConoTruncado/>}/>
+          <Route path='/prismaNLados' element={<PrismaNLados/>}/>
           <Route path='/areas' element={<Areas/>}/>
           <Route path='/cuadrado' element={<Cuadrado/>}/>
           <Route path='/rectangulo' element={<Rectangulo/>}/>
           <Route path='/paralelogramo' element={<Paralelogramo/>}/>
+          <Route path='/poligonoRegular' element={<PoligonoRegular/>}/>
           <Route path='/superficies' element={<Superficies/>}/>
           <Route path='/supEsfera' element={<SuperficieEsfera/>}/>
         </Routes>        
