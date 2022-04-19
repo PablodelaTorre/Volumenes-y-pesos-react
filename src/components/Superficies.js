@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap'
+import SuperficiePrismaCircular from './SuperficieCilindro'
 import SuperficieEsfera from './SuperficieEsfera'
+import SuperficiePrismaRectangular from './SuperficiePrismaRectangular'
+
 
 const Superficies = () => {
 
@@ -19,13 +22,17 @@ const Superficies = () => {
                         Filtrar Figuras
                     </DropdownToggle>
                     <DropdownMenu>
-                        <DropdownItem><Link className='links-figuras' to="/">Todos las figuras</Link></DropdownItem>
+                        <DropdownItem><Link className='links-figuras' to="/">Todas las figuras</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/superficies">Todas las Superficies</Link></DropdownItem>
                         <DropdownItem><Link className='links-figuras' to="/supEsfera">Superficie Esfera</Link></DropdownItem>
+                        <DropdownItem><Link className='links-figuras' to="/supPrismaRectangular">Superficie Prisma Rectangular</Link></DropdownItem>
+                        <DropdownItem><Link className='links-figuras' to="/supPrismaCircular">Superficie Prisma Circular</Link></DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
             </div>
             <SuperficieEsfera/>
+            <SuperficiePrismaRectangular/>
+            <SuperficiePrismaCircular/>
         </>
     )
 }

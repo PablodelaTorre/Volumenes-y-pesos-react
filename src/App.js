@@ -20,6 +20,8 @@ import Cuadrado from './components/Cuadrado';
 import SuperficieEsfera from './components/SuperficieEsfera';
 import PoligonoRegular from './components/PoligonoRegular';
 import PrismaNLados from './components/PrismaNLados';
+import SuperficiePrismaRectangular from './components/SuperficiePrismaRectangular';
+import SuperficiePrismaCircular from './components/SuperficieCilindro';
 
 
 const App = () => {
@@ -49,6 +51,8 @@ const App = () => {
           <Route path='/poligonoRegular' element={<PoligonoRegular/>}/>
           <Route path='/superficies' element={<Superficies/>}/>
           <Route path='/supEsfera' element={<SuperficieEsfera/>}/>
+          <Route path='/supPrismaRectangular' element={<SuperficiePrismaRectangular/>}/>
+          <Route path='/supPrismaCircular' element={<SuperficiePrismaCircular/>}/>
         </Routes>        
         <div className='div-footer'>
           <Footer/>
